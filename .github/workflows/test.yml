@@ -1,0 +1,18 @@
+name: Test Setup PHP action
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+    - name: Setup PHP
+      uses: shivammathur/setup-php@3eda58347216592f618bb1dff277810b6698e4ca
+      with:
+        php-version: '7.4'
+        extensions: fileinfo, gd
+        tools: composer
+      env:
+        fail-fast: true
