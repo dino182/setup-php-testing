@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Setup PHP
-      uses: shivammathur/setup-php@3eda58347216592f618bb1dff277810b6698e4ca
+      uses: dino182/setup-php@1a2cb4f8725637734d73f54ddd402d23308a4959
       with:
         php-version: '7.4'
         extensions: fileinfo, gd
